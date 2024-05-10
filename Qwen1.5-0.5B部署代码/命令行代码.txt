@@ -1,0 +1,11 @@
+# 使⽤git命令克隆llama.cpp项⽬
+git clone https://github.com/ggerganov/llama.cpp
+
+# 编译llama.cpp项⽬
+cd llama.cpp
+make -j
+
+# 加载模型，并执⾏
+# 在llama.cpp⽬录中执⾏命令。
+./main -m /path/to/local/dir/qwen/Qwen1.5-0.5B-Chat-GGUF/qwen1_5-0_5b-chat q5_k_m.gguf -n 512 --color -i -cml
+
